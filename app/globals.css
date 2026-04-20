@@ -134,13 +134,21 @@ body {
   gap: 1.875rem;
 
   width: 9.375rem;
-  flex: 1;
+  flex: 0 0 9.375rem;
   padding-top: 1.25rem;
 
   background-color: #ffffff;
   box-shadow: 0.75rem 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease-in-out;
   will-change: transform;
+
+  @media (max-width: 62rem) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+  }
 }
 
 .sidebar--open {
