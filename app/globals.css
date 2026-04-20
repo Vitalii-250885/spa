@@ -134,7 +134,7 @@ body {
   gap: 1.875rem;
 
   width: 9.375rem;
-  flex: 1;
+  flex: 0 0 9.375rem;
   padding-top: 1.25rem;
 
   background-color: #ffffff;

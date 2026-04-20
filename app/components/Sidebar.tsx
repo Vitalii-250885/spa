@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { SettingsIcon } from './icons/SettingsIcon'
 import { MenuIcon } from './icons/MenuIcon'
 import { useState } from 'react'
@@ -9,6 +10,7 @@ import { CloseIcon } from './icons/CloseIcon'
 
 export const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   return (
     <div
@@ -37,10 +39,14 @@ export const Sidebar = () => {
         </div>
       </div>
       <nav className='nav nav-underline flex-column sidebar__nav'>
-        <Link className='nav-link active sidebar__nav-link' href='#'>
+        <Link
+          className={`nav-link sidebar__nav-link ${pathname === '/orders' ? 'active' : ''}`}
+          href='/orders'>
           Orders
         </Link>
-        <Link className='nav-link sidebar__nav-link' href='#'>
+        <Link
+          className={`nav-link sidebar__nav-link ${pathname === '/products' ? 'active' : ''}`}
+          href='/products'>
           Products
         </Link>
       </nav>
