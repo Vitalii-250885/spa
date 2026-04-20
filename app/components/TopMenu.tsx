@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Logo } from './icons/Logo'
 import { SearchIcon } from './icons/SearchIcon'
-import { Date } from './Date'
+import { CurrentDate } from './Date'
 
 export const TopMenu = () => {
   return (
@@ -32,7 +32,7 @@ export const TopMenu = () => {
           </form>
         </div>
       </div>
-      <Date />
+      <CurrentDate />
     </header>
   )
 }

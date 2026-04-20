@@ -1,7 +1,7 @@
 import { MONTHS_SHORT, WEEK_DAYS } from '../constants/date-format'
 import { ClockIcon } from './icons/ClockIcon'
 
-export const Date = () => {
+export const CurrentDate = () => {
   const now = new globalThis.Date()
 
   const currentWeekDay = WEEK_DAYS[now.getDay()]
