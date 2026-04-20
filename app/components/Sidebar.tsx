@@ -41,12 +41,14 @@ export const Sidebar = () => {
       <nav className='nav nav-underline flex-column sidebar__nav'>
         <Link
           className={`nav-link sidebar__nav-link ${pathname === '/orders' ? 'active' : ''}`}
-          href='/orders'>
+          href='/orders'
+          onClick={() => setIsOpen(!isOpen)}>
           Orders
         </Link>
         <Link
           className={`nav-link sidebar__nav-link ${pathname === '/products' ? 'active' : ''}`}
-          href='/products'>
+          href='/products'
+          onClick={() => setIsOpen(!isOpen)}>
           Products
         </Link>
       </nav>

@@ -8,10 +8,19 @@
   flex: 1;
   display: flex;
   min-height: 0;
+  position: relative;
 }
 
 .content {
   flex: 1;
   min-width: 0;
   padding: 1rem;
+  padding-left: 3rem;
+}
+
+@media (min-width: 62rem) {
+  .content {
+    padding-left: 1rem;
+    width: 100%;
+  }
 }

@@ -141,6 +141,14 @@ body {
   box-shadow: 0.75rem 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease-in-out;
   will-change: transform;
+
+  @media (max-width: 62rem) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+  }
 }
 
 .sidebar--open {
