@@ -9,7 +9,7 @@ export const TopMenu = () => {
       <div className='container-fluid header__container-fluid'>
         <Link className='navbar-brand' href='/'>
           <Logo className='header__logo' />
-          <span className='header__logo--text'>Flower SPA</span>
+          <span className='header__logo--text'>Inventory</span>
         </Link>
         <button
           className='header__search--button'

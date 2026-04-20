@@ -5,7 +5,7 @@ import styles from './page.module.css'
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main>
+      <main className={styles.main}>
         <TopMenu />
         <Sidebar />
       </main>
