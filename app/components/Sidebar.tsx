@@ -43,13 +43,13 @@ export const Sidebar = () => {
           className={`nav-link sidebar__nav-link ${pathname === '/orders' ? 'active' : ''}`}
           href='/orders'
           onClick={() => setIsOpen(!isOpen)}>
-          Orders
+          Приходы
         </Link>
         <Link
           className={`nav-link sidebar__nav-link ${pathname === '/products' ? 'active' : ''}`}
           href='/products'
           onClick={() => setIsOpen(!isOpen)}>
-          Products
+          Продукты
         </Link>
       </nav>
     </div>

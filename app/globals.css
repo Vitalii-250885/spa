@@ -7,6 +7,8 @@ body {
 
 .header {
   display: flex;
+  position: sticky;
+  top: 0;
   z-index: 999;
   box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
 }
@@ -259,4 +261,97 @@ body {
 .sidebar__nav.nav-underline .show > .nav-link {
   color: #000000;
   border-bottom-color: #51b53c;
+}
+
+/* --- products --- */
+
+.products__title {
+  font-size: 20px;
+}
+
+.products {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.products__title-select--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.products__select--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #a6a6a6;
+}
+
+.products__select {
+  width: 250px;
+}
+
+.product-card {
+  width: 100%;
+  min-width: max-content;
+}
+
+.product-card__body {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.product-card__marker {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 100%;
+
+  background-color: #51b53c;
+}
+
+.product-card__title {
+  text-decoration: underline #a6a6a6;
+}
+
+.product-card__sn {
+  color: #a6a6a6;
+}
+
+.product-card__status {
+  color: #51b53c;
+}
+
+.product-card__text {
+  font-size: 14;
+  color: #a6a6a6;
+}
+
+.product-card__price:first-child {
+  font-size: 14;
+  color: #a6a6a6;
+}
+
+.product-card__name-of-group {
+  width: 300px;
+}
+
+.product-card__name {
+  width: 180px;
+}
+
+.product-card__name-of-income {
+  width: 300px;
+}
+
+.product-card__delete-icon {
+  width: 18px;
+  height: 18px;
 }
