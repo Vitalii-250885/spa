@@ -9,8 +9,8 @@ const ProductsPage = () => {
         <h1 className='products__title'>Продукты / {count}</h1>
         <div className='products__select--wrapper'>
           <span>Тип:</span>
-          <select className='form-select products__select'>
-            <option defaultValue>Тип продукта</option>
+          <select className='form-select products__select' defaultValue=''>
+            <option value=''>Тип продукта</option>
             <option value='1'>Мониторы</option>
             <option value='2'>Клавиатуры</option>
             <option value='3'>Мышки</option>
